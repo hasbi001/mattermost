@@ -1,0 +1,6 @@
+{
+  "JobScheduler": {
+    "IntervalHours": 6,
+    "BatchSize": 50
+  }
+}
