@@ -1,0 +1,3 @@
+provider: generic
+url: https://releases.mattermost.com/desktop
+updaterCacheDirName: mattermost-desktop-updater
