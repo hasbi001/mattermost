@@ -1,0 +1,52 @@
+{
+  "ServiceSettings": {
+    "SiteURL": "http://localhost:8065",
+    "WebsocketPort": 8065,
+    "EnableWebSocket": true,
+    "EnableAPIv4": true
+  },
+  "LogSettings": {
+    "EnableConsole": true,
+    "ConsoleLevel": "DEBUG",
+    "EnableFile": true,
+    "FileLevel": "DEBUG",
+    "FileFormat": "json",
+    "EnableWebhookDebugging": true
+  },
+  "SqlSettings": {
+    "DriverName": "postgres",
+    "DataSource": "postgres://mmuser:password@127.0.0.1:6432/mattermost?sslmode=disable",
+    "MaxOpenConns": 20,
+    "MaxIdleConns": 10,
+    "ConnMaxLifetimeMilliseconds": 3600000,
+    "QueryTimeout": 30
+  },
+  "MetricsSettings": {
+    "Enable": true,
+    "BlockProfileRate": 1,
+    "ListenAddress": ":8067"
+  },
+  "PluginSettings": {
+    "Enable": true,
+    "EnableUploads": true,
+    "Playbooks": {
+      "EnableBatching": true,
+      "MaxTriggersPerDay": 10
+    }
+  },
+  "TeamSettings": {
+    "EnableUserCreation": true,
+    "EnableOpenServer": false,
+    "MaxUsersPerTeam": 100
+  },
+  "RateLimitSettings": {
+    "Enable": true,
+    "PerSec": 10,
+    "MaxBurst": 20,
+    "MemoryStoreSize": 10000
+  },
+  "FileSettings": {
+    "EnableFileAttachments": true,
+    "MaxFileSize": 52428800
+  }
+}
