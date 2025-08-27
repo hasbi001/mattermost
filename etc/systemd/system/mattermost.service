@@ -1,0 +1,17 @@
+[Unit]
+Description=Mattermost
+After=network.target
+
+[Service]
+Type=mattermost
+User=mattermost
+Group=mattermost
+WorkingDirectory=/opt/mattermost
+ExecStart=/opt/mattermost/bin/mattermost --debug --enablepprof
+Restart=always
+RestartSec=10
+
+Environment="GOMAXPROCS=2"
+
+[Install]
+WantedBy=multi-user.target
